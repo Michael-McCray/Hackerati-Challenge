@@ -5,13 +5,13 @@ arr = []
 while True:
 	num = input("Please enter a number and type done when finished: ")
 	if num.lower() == "done":
-		#make sure there are enouphe numbers in array
+		#make sure there are enouph numbers in array
 		if len(arr) < 3:
 			print("Needs to be atleast 3 numbers.")
 			continue
 		break
 	try:
-		#make srure a number was enterd
+		#make sure a number was entered
 		num = int(num)
 		arr.append(num)
 	except:
@@ -25,7 +25,7 @@ def findRun (arr):
 		run = arr[i:i+3] 
 		#make sure it's a full run 
 		if len(run) >= 3:
-		#Does sum = middle element X 3?	
+		#does sum = middle element X 3?	
 			if run[1] * 3 == sum(run):
 				final.append(i)
 
