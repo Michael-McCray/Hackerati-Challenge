@@ -5,7 +5,7 @@ arr = []
 while True:
 	num = input("Please enter a number and type done when finished: ")
 	if num.lower() == "done":
-		#make sure there are enouph numbers in array
+		#make sure there are enough numbers in array
 		if len(arr) < 3:
 			print("Needs to be atleast 3 numbers.")
 			continue
